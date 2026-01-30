@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.site-header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  position: sticky;  /* Makes it sticky */
+  top: 0;
+  z-index: 999;      /* Ensures it's above everything else */
+}
+
+.logo-container {
+  max-width: 200px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+header {
+  background: #1d3557;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  height: 60px;
+}
+.logo img {
+  height: 60px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+#hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581090700227-4c7bfc25c3fe') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.hero-content p {
+  font-size: 20px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #fca311;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.contact-info, .contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form button {
+  padding: 12px 20px;
+  background: #1d3557;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer {
+  background: #1d3557;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-content p {
+    font-size: 18px;
+  }
+}
+
+
+
+
